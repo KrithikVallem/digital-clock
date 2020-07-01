@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    font-size: 9em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#time24 {
+    border: 1px solid lightblue;
+    color: lightblue;
+}
+
+#time12 {
+    border: 1px solid pink;
+    color: pink;
+}
+
+#or {
+    color: lightgreen;
+}
