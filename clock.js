@@ -22,6 +22,8 @@ function addPaddingZero(num) {
 
 function convertTo12(h,m,s) {
     let suffix = "AM";
+
+    h = parseInt(h, 10); // make sure that h is a number not a string
     
     // hour 0 is 12:00 AM
     if (h === 0) {
