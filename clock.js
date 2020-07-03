@@ -1,7 +1,7 @@
 function getNewTime() {
     const d = new Date();
     const h24 = d.getHours().addPaddingZero();
-    const h12 = d.getHours().convertHoursTo12().addPaddingZero();
+    const h12 = d.getHours().convertHoursTo12();
     const m = d.getMinutes().addPaddingZero();
     const s = d.getSeconds().addPaddingZero();
     const amPm = (d.getHours() < 12) ? "AM" : "PM";
