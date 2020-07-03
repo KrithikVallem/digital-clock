@@ -1,0 +1,7 @@
+<!-- Just for fun, heres a clock in 1 line of JS -->
+<script>
+setInterval((d = new Date, h = d.getHours(), m = d.getMinutes(), s = d.getSeconds(), pad = n => n<10 ? `0${n}` : `${n}`) => {document.body.innerText = `${h === 0 ? 12 : h > 12 ? h-12 : h}:${pad(m)}:${pad(s)} ${h > 11 ? "PM" : "AM"}`}, 1*1000);
+</script>
+<!-- Here's an even shorter version, 134 chars, it can fit in a tweet!
+    setInterval((d=new Date,m=d.getMinutes(),s=d.getSeconds(),p=n=>n>9?":"+n:":0"+n)=>document.body.innerText=d.getHours()+p(m)+p(s),1000)
+-->
